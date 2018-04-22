@@ -1,5 +1,4 @@
 import * as _ from 'lodash';
-import helpers from '../../helper_functions/helperFunctions';
 
 function newCell(value, x, y) {
   return{
@@ -82,8 +81,7 @@ const getMarioCells = cells => {
 }
 
 const printTilesToBoard = (arrayInput, columns, rows) => {
-  // let array = [];
-
+  
   for(let i = 0; i < arrayInput.length; i++) {
 
     let board = [];
@@ -99,5 +97,5 @@ const printTilesToBoard = (arrayInput, columns, rows) => {
   }
 }
 
-const helper_functions = {printTilesToBoard, getMushroomCells, getMarioCells};
+const helper_functions = {printTilesToBoard, getMushroomCells, getMarioCells, getCellByCoords, findCellandReplace};
 export default helper_functions;
